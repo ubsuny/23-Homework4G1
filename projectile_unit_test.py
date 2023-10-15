@@ -1,6 +1,5 @@
 import unittest
-from projectile_motion_with_air_resistance import calculate_horizontal_distance  # Replace 'your_script_name' with the actual name of your script
-
+from projectile_motion_with_air_resistance import calculate_horizontal_distance 
 class TestCalculateHorizontalDistance(unittest.TestCase):
 
     def test_distance_calculation(self):
