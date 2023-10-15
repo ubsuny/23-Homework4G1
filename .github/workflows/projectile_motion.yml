@@ -21,12 +21,12 @@ jobs:
     - name: Install dependencies
       run: |
         pip install numpy  # Add any other dependencies here
-      # Use 'pip install -r requirements.txt' if you have a requirements.txt file.
+      # Use 'pip install -r requirements.txt' from requirements.txt file.
 
     - name: Run Python script
       run: python projectile_motion_with_air_resistance.py --x0 1.0 --y0 0.0 --v0 10.0 --launch_angle_deg 45.0 --m 0.1
 
     # - name: Upload results
-      # You can use this step to upload any relevant artifacts or results to the workflow.
+      #  Use this step to upload any relevant artifacts or results to the workflow.
 
-    # Add more steps as needed, such as running tests or linters.
+  
