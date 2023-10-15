@@ -1,0 +1,32 @@
+name: Run Computational Physics Script
+
+on:
+  push:
+    branches:
+      - main  # Branch name to trigger the workflow on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11.5  # Python version 
+
+    - name: Install dependencies
+      run: |
+        pip install numpy  # Add any other dependencies here
+      # Use 'pip install -r requirements.txt' if you have a requirements.txt file.
+
+    - name: Run Python script
+      run: python projectile_motion_with_air_resistance.py --x0 1.0 --y0 0.0 --v0 10.0 --launch_angle_deg 45.0 --m 0.1
+
+    # - name: Upload results
+      # You can use this step to upload any relevant artifacts or results to the workflow.
+
+    # Add more steps as needed, such as running tests or linters.
