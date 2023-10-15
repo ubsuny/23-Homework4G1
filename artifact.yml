@@ -1,0 +1,37 @@
+name: plot and log as output
+
+on:
+  push:
+    paths:
+      - 'your_python_file_name.py'
+
+jobs:
+  test-and-plot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        echo "numpy==1.21.0" > requirements.txt
+        echo "matplotlib==3.4.2" >> requirements.txt
+        pip install -r requirements.txt # requirements.txt should contain libraries you want to use
+    - name: List directory contents  # Debugging step to see contents
+      run: ls -al # this will choose the directory of your file
+    - name: Run HW2 or 3 tests, generate plot, and write to log
+      run: python your_python_file_name.py
+
+    - name: Upload plot and log as artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: results
+        path: |
+          hw_chosen.png # this will plot your result if you have
+          your_results.log
