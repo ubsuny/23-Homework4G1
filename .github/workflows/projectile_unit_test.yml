@@ -21,7 +21,6 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt  
-        pip install unittest
       # This uses 'pip install numpy' to fetch specific dependencies to install.
 
     - name: Run unit tests
