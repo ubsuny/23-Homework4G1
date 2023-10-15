@@ -19,7 +19,6 @@ class TestCalculateHorizontalDistance(unittest.TestCase):
         # Assert that the actual result matches the expected result
         self.assertAlmostEqual(actual_distance, expected_distance, places=1)
 
-        # You can add more test cases as needed
 
 if __name__ == '__main__':
     unittest.main()

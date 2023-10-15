@@ -1,0 +1,29 @@
+name: Projectile motion with air resistance unit test
+
+on:
+  push:
+    branches:
+      - main  # Branch to trigger the workflow on
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11  #Python version
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt  
+      # This uses 'pip install numpy' to fetch specific dependencies to install.
+
+    - name: Run unit tests
+      run: python projectile_unit_test.py
+
+
