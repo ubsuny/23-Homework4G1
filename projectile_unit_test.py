@@ -1,3 +1,10 @@
+"""
+Module: projectile_unit_test
+
+This module contains unit tests for the calculate_horizontal_distance function in the
+projectile_motion_with_air_resistance module.
+"""
+
 import unittest
 from projectile_motion_with_air_resistance import calculate_horizontal_distance
 
