@@ -1,5 +1,4 @@
-name: Run Computational Physics Script
-
+name: Projectile motion with air resistance
 on:
   push:
     branches:
@@ -16,20 +15,17 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.11.5  # Python version 
+        python-version: 3.11 # Python version 
 
     - name: Install dependencies
       run: |
-        pip install numpy  # Add any other dependencies here
-      # Use 'pip install -r requirements.txt' from requirements.txt file.
+        pip install numpy  
+        pip install -r requirements.txt
 
     - name: Run Python script
       run: python projectile_motion_with_air_resistance.py --x0 1.0 --y0 0.0 --v0 10.0 --launch_angle_deg 45.0 --m 0.1
 
-    # - name: Upload results
-      #  Use this step to upload any relevant artifacts or results to the workflow.
-
-      #    # Add more steps as needed, such as running tests or linters.
+    
 
 
   
