@@ -6,7 +6,7 @@ We choose HW3G5 projectile motion with air resistance
 
 we use `numpy` `pytest` and`pylint`
 
-## unit testing
+## Unit Testing
 
 ```python
 """
