@@ -9,6 +9,8 @@ AIR_RESISTANCE = 0.1   # Air resistance constant (kg/s)
 # v0: Initial velocity (m/s) of the projectile
 # launch_angle_deg: Launch angle in degree 
 # m is mass.
+
+#Function to calculate the distance
 def calculate_horizontal_distance(x0, y0, v0, launch_angle_deg, m):
     # Convert launch angle to radians
     theta = np.radians(launch_angle_deg)
