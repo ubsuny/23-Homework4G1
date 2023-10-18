@@ -1,4 +1,5 @@
 import argparse
+import numpy
 import numpy as np
 
 # Constants
