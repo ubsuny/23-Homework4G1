@@ -27,5 +27,5 @@ jobs:
         pip install pylint
     - name: List directory contents
       run: ls -al
-    - name: lint projectile_unit_test.py
-      run: pylint projectile_unit_test.py  
+    - name: lint projectile_motion_with_air_resistance.py
+      run: pylint projectile_motion_with_air_resistance.py
