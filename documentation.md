@@ -63,6 +63,7 @@ Ran 1 test in 0.005s
 OK
 ```
 ## linting
+We used pylint for linting the unit test python file as well as main algorithm python file
 
 ```yml
 name: Projectile Motion with Air Resistance
