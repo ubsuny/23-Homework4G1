@@ -1,5 +1,4 @@
 import argparse
-import numpy
 import numpy as np
 
 # Constants
@@ -44,6 +43,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    horizontal_distance = calculate_horizontal_distance(args.x0, args.y0, args.v0, args.launch_angle_deg, args.m)
+    h_d = calculate_horizontal_distance(args.x0, args.y0, args.v0, args.launch_angle_deg, args.m)
 
-    print(f"Horizontal distance traveled: {horizontal_distance:.2f} meters")
+    print(f"Horizontal distance traveled: {h_d:.2f} meters")
