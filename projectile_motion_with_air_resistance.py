@@ -1,3 +1,4 @@
+#This is all about finding the horizontal distance of a projectile object
 import argparse
 import numpy as np
 
