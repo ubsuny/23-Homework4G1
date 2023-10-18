@@ -30,6 +30,7 @@ def calculate_horizontal_distance(x0, y0, v0, launch_angle_deg, m):
 
     # Calculate the horizontal distance traveled
     x_final = vx_values[ground_index]
+    m=m
 
     return x_final
 
