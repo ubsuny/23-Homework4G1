@@ -2,11 +2,11 @@
 
 We choose HW3G5 projectile motion with air resistance
 
-## library
+## Library
 
 we use `numpy` `pytest` and`pylint`
 
-## unit testing
+## Unit testing
 
 ```python
 """
@@ -62,7 +62,7 @@ Ran 1 test in 0.005s
 
 OK
 ```
-### workflow for unit testing
+### Workflow for unit testing
 
 ```yml
 name: Projectile Motion with Air Resistance
@@ -98,7 +98,7 @@ jobs:
       run: pylint projectile_unit_test.py  
 ```
 
-## linting
+## Linting
 We used pylint for linting the unit test python file as well as main algorithm python file
 
 ```yml
@@ -169,7 +169,7 @@ def test_subtraction():
     assert 3 - 2 == 1
 
 ```
-## requirement
+## Requirement
 
 ```
 numpy
