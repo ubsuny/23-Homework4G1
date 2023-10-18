@@ -2,7 +2,7 @@
 
 We choose HW3G5 projectile motion with air resistance
 
-## library
+## Library
 
 we use `numpy` `pytest` and`pylint`
 
