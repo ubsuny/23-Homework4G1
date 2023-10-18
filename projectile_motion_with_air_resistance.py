@@ -38,7 +38,7 @@ if __name__ == "__main__":
     parser.add_argument("--x0", type=float, required=True, help="Initial horizontal position (m)")
     parser.add_argument("--y0", type=float, required=True, help="Initial vertical position (m)")
     parser.add_argument("--v0", type=float, required=True, help="Initial velocity (m/s)")
-    parser.add_argument("--launch_angle_deg", type=float, required=True, help="Launch angle in degrees")
+    parser.add_argument("--launch_angle_deg", type=float, required=True, help="Launch angle in deg")
     parser.add_argument("--m", type=float, required=True, help="Mass of the projectile (kg)")
 
     args = parser.parse_args()
