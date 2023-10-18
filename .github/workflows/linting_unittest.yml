@@ -28,6 +28,12 @@ jobs:
     - name: List directory contents
       run: ls -al
     - name: lint projectile_unit_test.py
-      run: pylint projectile_unit_test.py  
+      run: pylint projectile_unit_test.py > pylint_projectile_output.log
+
+    - name: Upload log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: pylint_output
+        path: pylint_output.log
 
     
