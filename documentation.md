@@ -62,7 +62,7 @@ Ran 1 test in 0.005s
 
 OK
 ```
-## linting
+## Linting
 
 ```yml
 name: Projectile Motion with Air Resistance
