@@ -101,7 +101,7 @@ jobs:
 ```
 
 
-### Output example:
+### Output Example:
 first time linting using `pylint` 
 
 ![Alt text](https://user-images.githubusercontent.com/143649458/275564730-f8f09bf0-73e6-444b-9a1e-f8d748c1bf6b.png)
@@ -132,7 +132,7 @@ def test_subtraction():
     assert 3 - 2 == 1
 
 ```
-## requirement
+## Requirements
 
 ```
 numpy
